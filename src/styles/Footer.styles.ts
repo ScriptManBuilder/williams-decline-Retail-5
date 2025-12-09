@@ -252,7 +252,7 @@ export const ContactItem = styled.div`
 
 export const ContactLabel = styled.div`
   color: #8b96a5;
-  font-size: 0.725rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 0.35rem;
@@ -268,8 +268,7 @@ export const ContactValue = styled.a`
   gap: 0.5rem;
   font-weight: 500;
   transition: all 0.2s ease;
-  word-break: break-word;
-  overflow-wrap: break-word;
+  word-break: break-all;
 
   svg {
     width: 15px;
@@ -304,5 +303,39 @@ export const FooterBottom = styled.div`
       color: #5a6c7d;
       margin-top: 0.75rem;
     }
+  }
+`;
+
+export const PaymentLogos = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  
+  @media (max-width: 640px) {
+    justify-content: flex-start;
+  }
+`;
+
+export const PaymentLogo = styled.div`
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 425px) {
+    width: 44px;
+    height: 44px;
+    padding: 6px;
   }
 `;
